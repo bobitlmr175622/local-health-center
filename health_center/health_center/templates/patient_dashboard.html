@@ -1,0 +1,7 @@
+<h1>Welcome, {{ user.username }}!</h1>
+<h2>Your Upcoming Appointments:</h2>
+<ul>
+    {% for appointment in appointments %}
+    <li>{{ appointment.date }} - {{ appointment.reason }}</li>
+    {% endfor %}
+</ul>

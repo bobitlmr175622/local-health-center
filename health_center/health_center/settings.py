@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'health_center.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'health_center_db',
+        'USER': 'root',
+        'PASSWORD': 'Psalms46:5',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation
